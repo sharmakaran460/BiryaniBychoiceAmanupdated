@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@android:color/white"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/loginlinear"
+        android:src="@drawable/finallogo"
+        android:id="@+id/logo"/>
+    <LinearLayout
+        android:id="@+id/loginlinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+     android:layout_centerInParent="true"
+        android:padding="10sp">
+
+
+        <EditText
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColorHint="@color/colorPrimary"
+            android:id="@+id/enter_mob"
+            android:inputType="phone"
+            android:hint="Mobile no"
+            android:drawableRight="@drawable/ic_call_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send OTP"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="#0037FF"
+            android:textSize="12dp"
+            android:id="@+id/send_otp_text"/>
+
+
+
+        <EditText
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:visibility="gone"
+            android:hint="OTP"
+            android:id="@+id/enter_otp"
+            android:inputType="numberPassword"
+            android:drawableRight="@drawable/ic_lock_black_24dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_gravity="center"
+            android:text="Login/Signup"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/login_btn"
+            android:padding="10sp"
+            android:background="@drawable/btn_background"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

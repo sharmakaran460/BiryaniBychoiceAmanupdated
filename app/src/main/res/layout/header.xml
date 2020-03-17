@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="16sp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:elevation="12sp"
+
+        app:cardCornerRadius="40sp"
+        android:id="@+id/cardprofile"
+        android:layout_margin="5sp">
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/profileimage"
+            android:scaleType="centerCrop"
+            android:background="@drawable/family"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wellcome User"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/railway_regular"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.biryanibychoice.com"
+        android:textColor="@android:color/white"
+        style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+</LinearLayout>

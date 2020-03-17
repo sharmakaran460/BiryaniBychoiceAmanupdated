@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer_Profile"
+    android:background=" #ecf0f1">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/cover_profile_lay">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/cover_picture"
+            android:background="@drawable/biryaniimage"
+
+            />
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/colorPrimaryDark"
+            android:id="@+id/toolbar"
+            android:background="@color/fbutton_color_transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:elevation="12sp"
+            android:id="@+id/cardprofile"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5sp"
+            app:cardCornerRadius="40sp"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:src="@drawable/biryaniimage"
+                android:scaleType="centerCrop"
+                android:id="@+id/profile_pic"/>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:padding="10sp"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/cardprofile"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/customername"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="24sp"
+            android:layout_gravity="end"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/firstlinear"
+        android:layout_marginTop="2sp"
+        android:layout_below="@+id/cover_profile_lay"
+     >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:text="Edit"
+                android:background="@drawable/repeate_btn_bottom_sheet"
+                android:id="@+id/editProfile"
+                android:textSize="10sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/btn_myOrders"
+               android:textColor="#2e86c1"
+               android:layout_margin="2sp"
+               android:elevation="4sp"
+               style="@style/TextAppearance.MaterialComponents.Body1"
+               android:background="@drawable/add_new_bottom_sheet"
+               android:text="My Orders"
+               android:layout_gravity="end"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/firstlinear"
+        android:layout_marginTop="20sp"
+        android:layout_margin="10sp">
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Review"
+                android:id="@+id/Reviews"
+                android:layout_weight="1"
+                android:padding="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photos"
+                android:layout_weight="1"
+                android:id="@+id/photos"
+                android:padding="20sp" />
+
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Heres the review"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:background="@color/fbutton_color_transparent"
+        app:title="Manage Addresses"
+        android:id="@+id/toolbar"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/toolbar"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context=".ManageAddresses.ManageAddresses"
+        android:id="@+id/maps"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your current location"
+        android:textStyle="bold"
+        android:id="@+id/current_location_text"
+        android:layout_below="@+id/maps"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_location"
+        android:layout_below="@+id/current_location_text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/current_location"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:text="Manage address"
+            android:textColor="#080808"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:text="City name"
+            android:textColor="#080808"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:text="houseno/flatno/floor"
+            android:textColor="#080808"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:text="Landmark/street/locality"
+            android:textColor="#080808"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
