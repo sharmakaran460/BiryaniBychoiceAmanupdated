@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Home_Screen"></activity>
+        <activity android:name=".ItemDetails.ItemDetails"></activity>
+        <activity android:name=".Home_Screen" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

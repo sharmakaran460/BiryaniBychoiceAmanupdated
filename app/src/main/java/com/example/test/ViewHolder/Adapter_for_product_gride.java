@@ -20,6 +20,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.test.ItemDetails.ItemDetails;
 import com.example.test.Model.CartModal;
 import com.example.test.Model.FoodModel;
 import com.example.test.OrderCart.Cart;
@@ -74,18 +75,28 @@ public class Adapter_for_product_gride extends RecyclerView.Adapter<Adapter_for_
     {
         String id = cat_list_product_details.get(position).get("id");
         String type = cat_list_product_details.get(position).get("type");
-        String name = cat_list_product_details.get(position).get("name");
+        final String name = cat_list_product_details.get(position).get("name");
         String slug = cat_list_product_details.get(position).get("slug");
         String sku = cat_list_product_details.get(position).get("sku");
-        String description = cat_list_product_details.get(position).get("description");
+        final String description = cat_list_product_details.get(position).get("description");
         String statuss = cat_list_product_details.get(position).get("statuss");
         String in_stock = cat_list_product_details.get(position).get("in_stock");
-        String price = cat_list_product_details.get(position).get("price");
+        final String price = cat_list_product_details.get(position).get("price");
 
         holder.food_desc.setText(description);
         holder.food_name.setText(name);
         holder.food_price.setText(price);
 
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, ItemDetails.class);
+                i.putExtra("name",name);
+                i.putExtra("desc",description);
+                i.putExtra("price",price);
+                context.startActivity(i);
+            }
+        });
 
         if(type.equalsIgnoreCase("BASIC"))
         {

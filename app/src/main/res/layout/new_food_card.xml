@@ -26,8 +26,6 @@
         android:layout_height="wrap_content">
 
         <ImageView
-
-
             android:layout_width="15dp"
             android:id="@+id/new_c_cat_icon"
             android:layout_height="15dp" />
@@ -136,13 +134,12 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="30sp"
             >
 
             <Button
-                style="@style/TextAppearance.AppCompat.Body1"
-                android:fontFamily="@font/railway_regular"
+                style="@style/TextAppearance.MaterialComponents.Body1"
                 android:background="@color/colorPrimaryDark"
                 android:outlineSpotShadowColor="@color/colorPrimaryDark"
                 android:outlineAmbientShadowColor="@color/colorPrimaryDark"
@@ -151,8 +148,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/new_c_add_btn"
                 android:text="Add"
-                android:textStyle="bold"
-                android:textSize="15sp" />
+                android:textStyle="bold"/>
 
         </LinearLayout>
     </RelativeLayout>
