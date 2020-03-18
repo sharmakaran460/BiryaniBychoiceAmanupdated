@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,6 +33,7 @@ public class Home_Screen extends AppCompatActivity implements NavigationView.OnN
     TabLayout tab;
     ViewPager viewPager;
     Toolbar toolbar;
+    EditText locationtext;
     TextView toolbarTitle;
     ArrayList<String> tabTitle = new ArrayList<>();
     ArrayList<HashMap<String,String>> cat_list = new ArrayList<>();
