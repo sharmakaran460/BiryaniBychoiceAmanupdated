@@ -53,7 +53,11 @@ public class DynamicFragment extends Fragment
         super.onCreate(savedInstanceState);
         try
         {
-            get_all_product_list(getActivity());
+
+            String slug[]=getArguments().getString("id").split(",");
+
+            Log.e("id--------------------->",getArguments().getString("id"));
+            get_all_product_list(getActivity(),slug[1]);
         }
         catch (Exception e)
         {
@@ -71,6 +75,7 @@ public class DynamicFragment extends Fragment
         return fragment;
     }
     ArrayList<String> videoModelArrayList = new ArrayList<>();
+    //hello
     String node;
 
 
@@ -82,13 +87,15 @@ public class DynamicFragment extends Fragment
         recyclerView = view.findViewById(R.id.layout);
         node = getArguments().getString("someValue");
 
-        Log.e("id--------------------->",getArguments().getString("id"));
+        String slug[]=getArguments().getString("id").split(",");
+
+      //  Log.e("id--------------------->",getArguments().getString("id"));
 
         return view;
     }
 
 
-    public void get_all_product_list(final Context context)
+    public void get_all_product_list(final Context context, final String slug)
     {
         RequestQueue queue = Volley.newRequestQueue(context.getApplicationContext());
         String url = "http://3.6.27.167/api/category/cat-pro";
@@ -106,13 +113,9 @@ public class DynamicFragment extends Fragment
                             try
                             {
                                 JSONObject object = new JSONObject(response.toString());
-
                                 int status = object.getInt("status");
-
                                 if(status==200)
                                 {
-
-
                                     JSONArray jsonArray = object.getJSONArray("result");
                                     for(int i=0;i<jsonArray.length();i++)
                                     {
@@ -181,7 +184,7 @@ public class DynamicFragment extends Fragment
             {
                 Map<String, String>  params = new HashMap<String, String>();
                 params.put("nsyskey", "082057a4d249514389bb90c6d50ecf23");
-                params.put("slug", "hyderabadi");
+                params.put("slug", slug.trim());
 
                 return params;
             }
@@ -194,12 +197,5 @@ public class DynamicFragment extends Fragment
         queue.add(postRequest);
 
     }
-
-
-
-
-
-
-
 
 }

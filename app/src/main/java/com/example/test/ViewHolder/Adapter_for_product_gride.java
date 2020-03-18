@@ -60,7 +60,8 @@ public class Adapter_for_product_gride extends RecyclerView.Adapter<Adapter_for_
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    {
         LayoutInflater inflater= LayoutInflater.from(parent.getContext());
         view=inflater.inflate(R.layout.new_food_card,parent,false);
         ViewHolder holder = new ViewHolder(view);

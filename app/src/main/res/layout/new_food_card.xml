@@ -59,10 +59,9 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/new_c_desc"
-        >
+        android:layout_below="@+id/new_c_desc">
         <TextView
-            android:paddingLeft="10dp"
+            android:paddingLeft="5dp"
             android:textSize="14sp"
             style="@style/TextAppearance.AppCompat.Body2"
             android:textStyle="bold"
@@ -81,8 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/new_c_rupees"
             android:id="@+id/new_c_price"
-            android:text="200"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:textColor="@color/gray"
             android:layout_centerVertical="true"
             />
@@ -135,8 +133,8 @@
             android:background="@drawable/loginbackground"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:layout_width="100dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="90dp"
             android:layout_height="30sp"
             >
 

@@ -61,8 +61,10 @@ public class volley_for_get_category
                                         cat_list_hash.clear();
                                         String id = obj.getString("id");
                                         String name = obj.getString("name");
+                                        String slug = obj.getString("slug");
                                         cat_list_hash.put("id",id);
                                         cat_list_hash.put("name",name);
+                                        cat_list_hash.put("slug",slug);
                                         cat_list.add(cat_list_hash);
                                     }
 
