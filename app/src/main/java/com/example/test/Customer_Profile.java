@@ -33,7 +33,7 @@ Toolbar toolbar;
         myorders = findViewById(R.id.btn_myOrders);
         edit = findViewById(R.id.editProfile);
       /*  profilePic = findViewById(R.id.prodilepic);*/
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.customer_profile_toolbar);
 
         myorders.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,7 +55,7 @@ Toolbar toolbar;
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Customer_Profile.this, "edit the Profile", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Customer_Profile.this,Edit_Customer_Profile.class));
             }
         });
 

@@ -2,6 +2,7 @@ package com.example.test.ManageAddresses;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
@@ -15,6 +16,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.test.R;
@@ -42,6 +44,7 @@ public class ManageAddresses extends FragmentActivity implements OnMapReadyCallb
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
     TextView current_location;
+    Toolbar toolbar;
     private static final int REQUEST_CODE = 101;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,15 @@ public class ManageAddresses extends FragmentActivity implements OnMapReadyCallb
         setContentView(R.layout.activity_manage_addresses);
         current_location=findViewById(R.id.current_location);
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+
+        toolbar=findViewById(R.id.manage_add_toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         fetchLocation();
     }
     private void fetchLocation() {

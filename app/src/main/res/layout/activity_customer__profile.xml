@@ -6,11 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".Customer_Profile"
     android:background=" #ecf0f1">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Profile"
+        android:id="@+id/customer_profile_toolbar"
+        android:background="@color/colorPrimaryDark" />
+
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:layout_alignParentTop="true"
-        android:id="@+id/cover_profile_lay">
+        android:id="@+id/cover_profile_lay"
+        android:layout_below="@+id/customer_profile_toolbar">
+
 
         <ImageView
             android:layout_width="match_parent"
@@ -19,13 +28,7 @@
             android:background="@drawable/biryaniimage"
 
             />
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:titleTextColor="@color/colorPrimaryDark"
-            android:id="@+id/toolbar"
-            android:background="@color/fbutton_color_transparent"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
         <androidx.cardview.widget.CardView
             android:layout_width="80sp"
             android:layout_height="80sp"
@@ -74,9 +77,9 @@
             android:orientation="vertical">
 
             <Button
-                android:layout_width="50sp"
+                android:layout_width="wrap_content"
                 android:layout_height="30sp"
-                android:text="Edit"
+                android:text="Edit Profile"
                 android:background="@drawable/repeate_btn_bottom_sheet"
                 android:id="@+id/editProfile"
                 android:textSize="10sp"

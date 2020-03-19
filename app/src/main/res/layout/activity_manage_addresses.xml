@@ -12,13 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:background="@color/fbutton_color_transparent"
+        android:background="@color/colorPrimaryDark"
+
         app:title="Manage Addresses"
-        android:id="@+id/toolbar"/>
+        android:id="@+id/manage_add_toolbar"/>
     <fragment
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:layout_below="@+id/toolbar"
+        android:layout_below="@+id/manage_add_toolbar"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         tools:context=".ManageAddresses.ManageAddresses"
         android:id="@+id/maps"/>
@@ -90,8 +91,6 @@
                 android:drawableStart="@drawable/ic_home_black_24dp"
                 android:hint="Home"
                android:textColor="@drawable/radiobuttoncolor"
-                android:padding="20sp"
-                android:button="@color/white"
                 style="@style/TextAppearance.MaterialComponents.Body1"
                 android:layout_margin="5sp"
                 android:id="@+id/home"/>
@@ -99,9 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5sp"
-                    android:padding="20sp"
                     android:textColor="@drawable/radiobuttoncolor"
-                    android:button="@color/white"
                     style="@style/TextAppearance.MaterialComponents.Body1"
                     android:hint="Work"
                     android:drawableStart="@drawable/ic_business_center_black_24dp"/>
@@ -109,14 +106,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Others"
-                android:padding="20sp"
-                android:button="@color/white"
                 android:textColor="@drawable/radiobuttoncolor"
 
                 android:layout_margin="5sp"
                 android:drawableLeft="@drawable/ic_edit_location_black_24dp"/>
 
         </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Address"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"/>
 
 
 
