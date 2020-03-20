@@ -57,6 +57,30 @@
             app:tabMode="scrollable"
             app:tabSelectedTextColor="@color/colorPrimaryDark" />
 
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_containers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/recipe_placeholder_item" />
+
+                    <include layout="@layout/recipe_placeholder_item" />
+
+                    <include layout="@layout/recipe_placeholder_item" />
+
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
@@ -72,14 +96,13 @@
             android:id="@+id/nav_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            style="@style/TextAppearance.MaterialComponents.Body1"
             android:background="@color/white"
             app:elevation="4sp"
             app:itemTextColor="@color/colorPrimary"
             app:itemIconTint="@color/colorPrimary"
             app:headerLayout="@layout/header"
             app:itemIconSize="28sp"
-            app:itemTextAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:itemTextAppearance="?android:attr/textAppearanceMedium"
             app:menu="@menu/drawermenu"
             android:layout_gravity="start"
             />

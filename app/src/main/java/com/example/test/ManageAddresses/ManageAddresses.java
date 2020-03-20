@@ -39,7 +39,7 @@ import java.util.List;
 import java.util.Locale;
 
 
-public class ManageAddresses extends FragmentActivity implements OnMapReadyCallback {
+public class  ManageAddresses extends FragmentActivity implements OnMapReadyCallback {
 
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
