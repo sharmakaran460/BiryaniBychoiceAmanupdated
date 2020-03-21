@@ -63,7 +63,7 @@ public class Home_Screen extends AppCompatActivity implements NavigationView.OnN
         setContentView(R.layout.activity_home__screen);
 
         locationtext = findViewById(R.id.locationText);
-        shimmerFrameLayout =findViewById(R.id.shimmer_view_containers);
+
 
         requestPerm();
         intent = getIntent();
@@ -98,8 +98,7 @@ public class Home_Screen extends AppCompatActivity implements NavigationView.OnN
                 tab.addTab(tab.newTab().setText(cat_list.get(l).get("name")));
                 tabTitle.add(cat_list.get(l).get("name"));
             }
-            shimmerFrameLayout.stopShimmerAnimation();
-            shimmerFrameLayout.setVisibility(View.GONE);
+
         }
 
 

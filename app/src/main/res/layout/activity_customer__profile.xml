@@ -78,11 +78,13 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="30sp"
+                android:layout_height="wrap_content"
                 android:text="Edit Profile"
-                android:background="@drawable/repeate_btn_bottom_sheet"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:background="@drawable/ripple_effect_button"
                 android:id="@+id/editProfile"
-                android:textSize="10sp"
+                android:padding="5sp"
                 android:layout_gravity="center"/>
         </LinearLayout>
 
@@ -121,6 +123,7 @@
             <TextView android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Review"
+                android:gravity="center"
                 android:id="@+id/Reviews"
                 android:layout_weight="1"
                 android:padding="20sp"/>
@@ -128,6 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Photos"
+               android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/photos"
                 android:padding="20sp" />
