@@ -31,6 +31,7 @@
         <activity android:name=".Login" />
         <activity android:name=".OrderCart.Cart" />
         <activity android:name=".Contactus" />
+        <activity android:name=".ManageAddresses.AddressList"/>
         <activity android:name=".Edit_Customer_Profile"/>
         <activity android:name=".AboutUs" />
         <activity android:name=".MainActivity" />
