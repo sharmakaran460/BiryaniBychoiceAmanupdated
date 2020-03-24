@@ -42,6 +42,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Food Title"
+                android:textSize="25sp"
+                android:textStyle="bold"
                 android:id="@+id/food_title"
                 style="@style/TextAppearance.MaterialComponents.Body1"
                 android:layout_margin="10sp"/>
@@ -55,8 +57,8 @@
             pariatur. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ' "
                 android:layout_margin="5sp"
+                android:breakStrategy="high_quality"
                 android:id="@+id/food_desc"
-                android:inputType="textMultiLine"
 
                 style="@style/TextAppearance.MaterialComponents.Body2"/>
 
@@ -79,6 +81,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="textEnd"
+                    android:textStyle="bold"
                     android:layout_marginTop="10sp"
                     android:text="₹ "
                     style="@style/TextAppearance.MaterialComponents.Body1"/>
@@ -86,6 +89,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textStyle="bold"
                     android:layout_marginTop="10sp"
                     android:id="@+id/food_price"
                     android:hint="500"

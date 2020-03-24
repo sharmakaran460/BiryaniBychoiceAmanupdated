@@ -34,6 +34,7 @@
         <activity android:name=".ManageAddresses.AddressList"/>
         <activity android:name=".Edit_Customer_Profile"/>
         <activity android:name=".AboutUs" />
+        <activity android:name=".ItemDetails.ItemDetails"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".FlashScreen">
             <intent-filter>

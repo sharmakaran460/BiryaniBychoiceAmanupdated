@@ -55,10 +55,15 @@ String url ="http://61.247.229.49:8082/biryaniweb/food";
 
 
                 get_cat();
-
-
             }
         },3000);
+               Handler han = new Handler();
+               han.postDelayed(new Runnable() {
+                   @Override
+                   public void run() {
+                       finish();
+                   }
+               },4000);
 
     }
 
@@ -67,7 +72,6 @@ String url ="http://61.247.229.49:8082/biryaniweb/food";
     {
         volley_for_get_category obj_cat=new volley_for_get_category();
         obj_cat.get_all_category(FlashScreen.this);
-finish();
     }
 
 

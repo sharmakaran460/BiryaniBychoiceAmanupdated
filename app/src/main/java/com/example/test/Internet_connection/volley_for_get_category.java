@@ -71,7 +71,6 @@ public class volley_for_get_category
                                     Intent in=new Intent(context,Home_Screen.class);
                                     in.putExtra("All_cat_list",cat_list);
                                     context.startActivity(in);
-
                                 }
                                 else
                                 {

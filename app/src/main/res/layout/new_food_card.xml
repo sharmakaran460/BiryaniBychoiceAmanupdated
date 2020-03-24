@@ -50,9 +50,13 @@
         style="@style/TextAppearance.AppCompat.Body1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minHeight="30sp"
+        android:maxLines="3"
         android:textSize="10sp"
+        android:breakStrategy="high_quality"
         android:id="@+id/new_c_desc"
-        android:layout_below="@+id/linear"/>
+        android:layout_below="@+id/linear">
+    </TextView>
     <RelativeLayout
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"

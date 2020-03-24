@@ -174,7 +174,6 @@ public class Home_Screen extends AppCompatActivity implements NavigationView.OnN
             drawerLayout.closeDrawer(GravityCompat.START);
         }else{
             super.onBackPressed();
-            finish();
         }
 
 
