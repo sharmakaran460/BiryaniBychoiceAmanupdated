@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BiryaniBychoiceAmanupdatedNew.iml" filepath="$PROJECT_DIR$/BiryaniBychoiceAmanupdatedNew.iml" group="BiryaniBychoiceAmanupdatedNew" />
-      <module fileurl="file://$PROJECT_DIR$/app/BiryaniBychoiceAmanupdatedNew-app.iml" filepath="$PROJECT_DIR$/app/BiryaniBychoiceAmanupdatedNew-app.iml" group="BiryaniBychoiceAmanupdatedNew/app" />
+      <module fileurl="file://$PROJECT_DIR$/BiryaniBychoiceAmanupdated2.iml" filepath="$PROJECT_DIR$/BiryaniBychoiceAmanupdated2.iml" group="BiryaniBychoiceAmanupdated2" />
+      <module fileurl="file://$PROJECT_DIR$/app/BiryaniBychoiceAmanupdated2-app.iml" filepath="$PROJECT_DIR$/app/BiryaniBychoiceAmanupdated2-app.iml" group="BiryaniBychoiceAmanupdated2/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="BiryaniBychoiceAmanupdated/app" />
     </modules>
   </component>

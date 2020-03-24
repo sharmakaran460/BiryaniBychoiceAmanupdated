@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -84,7 +85,7 @@ public class Adapter_for_product_gride extends RecyclerView.Adapter<Adapter_for_
         String in_stock = cat_list_product_details.get(position).get("in_stock");
         final String price = cat_list_product_details.get(position).get("price");
 
-        holder.food_desc.setText(description);
+        holder.food_desc.setText(Html.fromHtml(description).toString());
         holder.food_name.setText(name);
         holder.food_price.setText(price);
 

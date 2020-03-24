@@ -40,6 +40,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Location  here"
+                android:textAllCaps="true"
+                android:padding="3sp"
                 android:textStyle="bold"
                 style="@style/TextAppearance.MaterialComponents.Body1"
                 android:id="@+id/Location_name"

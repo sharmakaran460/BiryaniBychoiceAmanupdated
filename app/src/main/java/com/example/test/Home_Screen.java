@@ -34,7 +34,6 @@ public class Home_Screen extends AppCompatActivity implements NavigationView.OnN
     TabLayout tab;
     ViewPager viewPager;
     Toolbar toolbar;
-    EditText locationtext;
     TextView toolbarTitle;
     ArrayList<String> tabTitle = new ArrayList<>();
     ArrayList<HashMap<String,String>> cat_list = new ArrayList<>();

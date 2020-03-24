@@ -45,7 +45,7 @@ public class  ManageAddresses extends FragmentActivity implements OnMapReadyCall
 
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
-    TextView current_location;
+    TextView current_location , area_name;
     Toolbar toolbar;
     EditText flat_house_no, landmark, state, pincode, city;
     Button save_address;
@@ -56,6 +56,7 @@ public class  ManageAddresses extends FragmentActivity implements OnMapReadyCall
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_addresses);
         current_location=findViewById(R.id.current_location);
+        area_name = findViewById(R.id.Location_name);
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
         flat_house_no=findViewById(R.id.houseno_flat_man_ad);
@@ -112,8 +113,9 @@ public class  ManageAddresses extends FragmentActivity implements OnMapReadyCall
                     for (int i=0;i<=address.getMaxAddressLineIndex(); i++){
                         addressText.add(address.getAddressLine(i));
                     }
-                    System.out.println("ye address aa rahae hai"+addressText);
+                    System.out.println("ye address aa rahae hai................."+addressText);
                     current_location.setText(addressText.get(0));
+                    area_name.setText(address.getAdminArea());
                 }
             }
         });
