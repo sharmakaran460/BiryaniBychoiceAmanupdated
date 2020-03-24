@@ -67,7 +67,7 @@ String url ="http://61.247.229.49:8082/biryaniweb/food";
     {
         volley_for_get_category obj_cat=new volley_for_get_category();
         obj_cat.get_all_category(FlashScreen.this);
-
+finish();
     }
 
 
